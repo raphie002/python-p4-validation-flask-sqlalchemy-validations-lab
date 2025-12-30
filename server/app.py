@@ -1,5 +1,6 @@
+# server/app.py
 from flask import Flask, make_response
-from flask_migrate import Migrate
+from flask_migrate import Migrate # type: ignore
 
 from models import db, Author, Post
 

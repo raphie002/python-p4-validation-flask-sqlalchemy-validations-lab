@@ -1,9 +1,10 @@
-import pytest
+# server/testing/models_test.py
+import pytest # type: ignore
 from sqlalchemy.exc import IntegrityError
 from app import app
 from models import db, Author, Post
 import logging
-from faker import Faker
+from faker import Faker # type: ignore
 
 
 LOGGER = logging.getLogger(__name__)
